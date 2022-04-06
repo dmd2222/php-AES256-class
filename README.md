@@ -18,7 +18,7 @@ php AES256 class
  require_once("AES256_class.php"); 
 
 # Example code:
- <<in the beginning of the file>>
+ -- in the beginning of the file-- 
  
   
  # Have questions or need help to implement?
