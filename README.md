@@ -4,7 +4,7 @@ php AES256 class
 
 
 //Testscript
-/*
+<code>
 $loops=10;
 $encryption_key=AES256::generate_random_string(4,16);
 $text_string="Test text 123" ;
@@ -16,4 +16,4 @@ echo "<br>";
 echo "<br>";
 $b = AES256::decrypt($a[0],$loops,$encryption_key,$a[1]);
 echo $b . "<br>";
-*/
+<code>
