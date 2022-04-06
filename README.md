@@ -5,9 +5,9 @@ php AES256 class
 
 //Testscript
 <code>
-$loops=10;
-$encryption_key=AES256::generate_random_string(4,16);
-$text_string="Test text 123" ;
+  $loops=10;
+  $encryption_key=AES256::generate_random_string(4,16);
+  $text_string="Test text 123" ;
 echo $text_string . "<br>";
 $a =AES256::encrypt($text_string,$loops,$encryption_key);
 echo "<br>Transmitting: Length: " . strlen($text_string) . " =>" . strlen($a[0]) . "<br>";
