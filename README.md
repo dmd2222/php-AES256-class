@@ -11,14 +11,14 @@ php AES256 class
 
 # Installation
 - Copy the code in your ftp folder. (Ready to use. :) )
-- <code> git clone https://github.com/dmd2222/php-easy-captcha.git <code>
+- <code> git clone https://github.com/dmd2222/php-AES256-class.git <code>
 
 
 # Using
- require_once("php-easy-captcha_class.php"); 
+ require_once("AES256_class.php"); 
 
 # Example code:
- <a href="https://github.com/dmd2222/php-easy-captcha/blob/main/example.php">Example</a>
+ <<in the beginning of the file>>
  
   
  # Have questions or need help to implement?
