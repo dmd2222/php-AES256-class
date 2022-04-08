@@ -26,6 +26,8 @@ SOURCE: https://github.com/dmd2222/php-AES256-class.git
 
 //Testscript
 /*
+require_once("AES256_class.php");
+
 $loops=10;
 $encryption_key=AES256::generate_random_string(4,16);
 $text_string="Test text 123" ;
@@ -64,10 +66,24 @@ class AES256{
         $encryption = openssl_encrypt($encryption, 'AES-256-CBC',
         $encryption_key,0, $encryption_iv[$i]);
 
-
+        
 
         }
 
+
+
+        //check encrypted to decrypt
+        $test_decypt=self::decrypt($encryption,$number_loops_int,$encryption_key,$encryption_iv);
+        if($test_decypt<>$text_string){
+            throw new exception("AES256_class.php: encrypt: recheck encryption fail");
+        }
+
+        //delete all vars
+        unset($text_string);
+        unset($encryption_key);
+        unset($number_loops_int);
+
+        //return result
         return array($encryption,$encryption_iv);
 
 }
